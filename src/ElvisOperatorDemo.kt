@@ -11,6 +11,7 @@ fun main() {
 /**
  * Before elvis operator we used if else block to check that variable is null or not.
  * But we can do the same operation with single line of code using elvis operator.
+ * This elvis opertor we can't use for unitialized variables.
  */
 fun beforeElvisOperator() {
     val lString: String? = null
