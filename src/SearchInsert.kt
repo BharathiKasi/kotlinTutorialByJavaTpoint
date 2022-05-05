@@ -2,11 +2,11 @@ class Solution {
     fun searchInsert(nums: IntArray, target: Int): Int {
         var lReturn = -1
         if (nums.size>0){
-            run lit@{
+            run test@{
                 nums.toList().forEach {
                     if (it==target){
                         lReturn = nums.indexOf(it)
-                        return@lit
+                        return@test
                     }else if (target<it && lReturn<0){
                         lReturn = nums.indexOf(it)
                     }

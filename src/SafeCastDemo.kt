@@ -25,6 +25,7 @@ class SafeCastDemo {
         val lUnsafeValue1 :Any?= "Unsafe cast "
         val lUnsafeValue2 = lUnsafeValue1 as String?
         println("the lUnsafeValue2 is ${lUnsafeValue2}")
+        var ll = mutableSetOf<String>()
     }
 
     /**
@@ -36,6 +37,14 @@ class SafeCastDemo {
         val lSafeValue1:Any? = 1234
         val lSafeValue2:String? = lSafeValue1 as? String
         println("the safe cast is ${lSafeValue2}")
+
+        val ll = 1
+        val l2 = 1
+        if(ll.equals(l2)){
+            println("ll==l2")
+        }else{
+            println("ll1=l2")
+        }
     }
 
 }
